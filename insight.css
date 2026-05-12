@@ -98,6 +98,26 @@
     display: block;
 }
 
+@media (max-width: 768px) {
+    .gap-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .gap-side {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .gap-side.left {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .gap-metric {
+        font-size: 1.8rem;
+    }
+}
+
+
 /* Strategic Portfolio Cards */
 .portfolio-grid {
     display: grid;

@@ -130,8 +130,16 @@ h2 {
 .hero-slider {
     position: relative;
     height: 100vh;
+    min-height: 600px;
     overflow: hidden;
     background: var(--color-obsidian);
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 85vh;
+        min-height: 500px;
+    }
 }
 
 .slide {
@@ -182,7 +190,15 @@ h2 {
     z-index: 2;
     text-align: left;
     padding-left: 5vw;
-    border-left: 1px solid rgba(0, 229, 255, 0.2);
+    border-left: 2px solid var(--color-cyan);
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding-left: 20px;
+        border-left-width: 3px;
+    }
 }
 
 .slide h1 {
@@ -255,12 +271,20 @@ h2 {
 .slide h1 {
     font-family: var(--font-heading-alt);
     font-weight: 800;
-    font-size: clamp(3rem, 8vw, 5.5rem);
-    line-height: 0.95;
+    font-size: clamp(2rem, 10vw, 5.5rem);
+    line-height: 1.1;
     margin-bottom: 2.5rem;
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+}
+
+@media (max-width: 768px) {
+    .slide h1 {
+        font-size: clamp(1.8rem, 12vw, 3rem);
+        line-height: 1;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .slide.active h1 {
@@ -322,6 +346,14 @@ h2 {
     display: flex;
     gap: 1.5rem;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .slider-controls {
+        bottom: 2rem;
+        left: 20px;
+        right: auto;
+    }
 }
 
 .control-dot {
