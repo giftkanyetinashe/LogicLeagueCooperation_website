@@ -24,11 +24,16 @@
     --transition-prestige: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     background-color: var(--color-navy);
