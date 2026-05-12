@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Strategy Portal | Logic League Insight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="insight.css">
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+<body>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- The War Room Visual Engine -->
+    <div class="war-room-bg" id="dataRainContainer"></div>
+
+    <main>
+        <!-- Section 1: The Strategic Horizon (Hero) -->
+        <header class="hero insight-hero">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <span class="data-badge" style="color: var(--insight-accent); background: rgba(0, 229, 255, 0.1); border-color: var(--insight-accent);">Division 01 // Strategy Hub</span>
+                    <h1 style="font-size: clamp(3.5rem, 8vw, 6rem);">Strategy Decoded.<br><span style="color: var(--insight-accent);">Profit Predicted.</span></h1>
+                    <p style="font-size: 1.25rem; color: var(--color-gray); max-width: 700px; margin-bottom: 3rem;">Logic League Insight provides the predictive intelligence required to navigate high-volatility markets. We don't just report what happened; we architect what happens next.</p>
+                    <a href="#audit-form" class="btn btn-red" style="padding: 1.2rem 3rem;">Request a Strategic Audit</a>
+                </div>
+            </div>
+            <!-- Point Cloud Visualization Placeholder -->
+            <div class="hero-visual reveal">
+                <canvas id="pointCloudCanvas"></canvas>
+            </div>
+        </header>
+
+        <!-- Section 1: The Identity & Mission (The "Why") -->
+        <section class="mission-section">
+            <div class="container reveal">
+                <h2 style="font-size: 0.9rem; color: var(--insight-accent); text-transform: uppercase; letter-spacing: 0.4em; margin-bottom: 2rem;">The Core Intelligence</h2>
+                <div class="mission-statement">
+                    "To empower African enterprises with predictive certainty. We bridge the gap between complex stochastic theory and boardroom-ready strategy."
+                </div>
+                <p style="max-width: 800px; margin: 0 auto; color: var(--color-gray); font-size: 1.1rem; line-height: 1.8;">
+                    Logic League Insight is the analytical 'brain' of the Cooperation. We are a specialized unit of data scientists and strategic advisors dedicated to solving the unique challenges of high-volatility markets. While others see economic uncertainty, we see data patterns waiting to be optimized.
+                </p>
+                
+                <div class="founder-note reveal">
+                    "Data is the most valuable asset in Zimbabwe today, but only if you have the logic to unlock it. We built this League to be the key."
+                    <div style="margin-top: 1rem; font-weight: 700; color: var(--insight-accent); font-style: normal;">— T.G. Ganyekanye, Founder</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Team (The "Pedigree") -->
+        <section class="team-section">
+            <div class="container reveal">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 0.9rem; color: var(--insight-accent); text-transform: uppercase; letter-spacing: 0.4em; margin-bottom: 1.5rem;">The Pedigree</h2>
+                    <h3 style="font-size: 2.5rem; color: var(--color-white);">Led by Technical Excellence.</h3>
+                </div>
+
+                <div class="team-grid">
+                    <!-- The Lead Strategist -->
+                    <div class="team-card">
+                        <h4>Lead Strategist</h4>
+                        <div class="pedigree-title">Tinashe Ganyekanye</div>
+                        <p>Our leadership is grounded in First-Class academic performance in Machine Learning from the University of Zimbabwe. Translating nearly 1 million transaction records into executive clarity.</p>
+                    </div>
+
+                    <!-- The Computing Edge -->
+                    <div class="team-card">
+                        <h4>The Computing Edge</h4>
+                        <div class="pedigree-title">ZCHPC Infrastructure</div>
+                        <p>We operate within the ZCHPC (High-Performance Computing) ecosystem, utilizing supercomputing clusters to run models that traditional agencies cannot execute.</p>
+                    </div>
+
+                    <!-- The Extended League -->
+                    <div class="team-card">
+                        <h4>The Extended League</h4>
+                        <div class="pedigree-title">Actionable Integration</div>
+                        <p>We collaborate with a dynamic network of Digital Marketers and Systems Architects to ensure our insights are immediately actionable and integrated.</p>
+                    </div>
+                </div>
+
+                <!-- Trust Badges Bar -->
+                <div class="badge-bar reveal">
+                    <div class="trust-badge-item">
+                        <i class="fas fa-university"></i>
+                        <span>University of Zimbabwe</span>
+                    </div>
+                    <div class="trust-badge-item">
+                        <i class="fas fa-microchip"></i>
+                        <span>ZCHPC Ecosystem</span>
+                    </div>
+                    <div class="trust-badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SI 155/2024 Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Gap (Problem) -->
+        <section class="gap-section">
+            <div class="container">
+                <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                    <h2 style="font-size: 1rem; color: var(--insight-red); text-transform: uppercase; letter-spacing: 0.4em;">The Intelligence Gap</h2>
+                    <p style="color: var(--color-gray); margin-top: 1.5rem;">Most firms look in the rearview mirror. We give you a GPS for high-stakes decision-making.</p>
+                </div>
+
+                <div class="gap-container reveal">
+                    <div class="gap-side left">
+                        <h3>Traditional Business Intelligence</h3>
+                        <p style="margin-bottom: 2rem;">Data-Rich but Insight-Poor. Reactive reporting that tells you why you lost money yesterday.</p>
+                        <div class="gap-metric">80/20 Guesswork</div>
+                        <p style="font-size: 0.8rem; opacity: 0.6;">Historical Averages & Lagging Indicators</p>
+                    </div>
+                    <div class="gap-side right">
+                        <h3>Logic League Insight</h3>
+                        <p style="margin-bottom: 2rem; color: var(--color-white);">Predictive Intelligence. Moving from observation to intervention.</p>
+                        <div class="gap-metric" style="color: var(--insight-accent);">55x ROI Optimization</div>
+                        <p style="font-size: 0.8rem; color: var(--insight-accent);">Pareto Compression (The 0.03% Strategy)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Strategic Service Matrix -->
+        <section class="matrix-section" id="services">
+            <div class="container">
+                <div class="reveal">
+                    <h2 style="margin-bottom: 1rem;">Ecosystem of Intelligence.</h2>
+                    <p style="color: var(--color-gray); margin-bottom: 4rem;">Don't just list data; architect the outcome. A strategic matrix for the modern enterprise.</p>
+                </div>
+
+                <div class="matrix-grid">
+                    <!-- Group A: Growth & Experience -->
+                    <div class="matrix-category reveal">
+                        <h4>Group A: Growth & Experience</h4>
+                        <span class="focus">The Front Office // Revenue Scaling</span>
+                    </div>
+
+                    <div class="matrix-card reveal">
+                        <div class="matrix-card-inner">
+                            <div class="matrix-card-front">
+                                <i class="fas fa-users-cog"></i>
+                                <h3>Customer Intelligence</h3>
+                            </div>
+                            <div class="matrix-card-back">
+                                <span class="detail-label">The Problem</span>
+                                <p class="problem">"Losing high-value customers without knowing why?"</p>
+                                <span class="detail-label">Key Activities</span>
+                                <ul style="list-style: none; font-size: 0.7rem; color: var(--color-gray); margin-bottom: 1rem; columns: 2;">
+                                    <li>• RFM Clustering</li>
+                                    <li>• CLV Prediction</li>
+                                    <li>• Silent Churn</li>
+                                    <li>• Dynamic Pricing</li>
+                                    <li>• ROAS Optimization</li>
+                                </ul>
+                                <span class="detail-label">The Metric</span>
+                                <p class="metric">55x ROI Optimization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="matrix-card reveal">
+                        <div class="matrix-card-inner">
+                            <div class="matrix-card-front">
+                                <i class="fas fa-robot"></i>
+                                <h3>AI-Powered Business</h3>
+                            </div>
+                            <div class="matrix-card-back">
+                                <span class="detail-label">The Problem</span>
+                                <p class="problem">"Scaling capped by operational headcount?"</p>
+                                <span class="detail-label">Key Activities</span>
+                                <ul style="list-style: none; font-size: 0.7rem; color: var(--color-gray); margin-bottom: 1rem; columns: 2;">
+                                    <li>• AI Chatbots</li>
+                                    <li>• Sales Assistants</li>
+                                    <li>• OCR Pipelines</li>
+                                    <li>• Workflow Orchestration</li>
+                                    <li>• Smart Reporting</li>
+                                </ul>
+                                <span class="detail-label">The Metric</span>
+                                <p class="metric">40% Operational Savings</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="matrix-card reveal">
+                        <div class="matrix-card-inner">
+                            <div class="matrix-card-front">
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Executive BI</h3>
+                            </div>
+                            <div class="matrix-card-back">
+                                <span class="detail-label">The Problem</span>
+                                <p class="problem">"Flying blind with lagging monthly reports?"</p>
+                                <span class="detail-label">Key Activities</span>
+                                <ul style="list-style: none; font-size: 0.7rem; color: var(--color-gray); margin-bottom: 1rem; columns: 2;">
+                                    <li>• Power BI / Streamlit</li>
+                                    <li>• Executive Portals</li>
+                                    <li>• Live Operations</li>
+                                    <li>• Financial Analytics</li>
+                                    <li>• Sales Dashboards</li>
+                                </ul>
+                                <span class="detail-label">The Metric</span>
+                                <p class="metric">Zero-Latency Oversight</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group B: Resilience & Risk -->
+                    <div class="matrix-category reveal">
+                        <h4>Group B: Resilience & Risk</h4>
+                        <span class="focus">The Back Office // Protection & Governance</span>
+                    </div>
+
+                    <div class="matrix-card reveal">
+                        <div class="matrix-card-inner">
+                            <div class="matrix-card-front">
+                                <i class="fas fa-brain"></i>
+                                <h3>Executive Intelligence</h3>
+                            </div>
+                            <div class="matrix-card-back">
+                                <span class="detail-label">The Problem</span>
+                                <p class="problem">"Strategic decisions based on 80/20 guesswork?"</p>
+                                <span class="detail-label">Key Activities</span>
+                                <ul style="list-style: none; font-size: 0.7rem; color: var(--color-gray); margin-bottom: 1rem; columns: 2;">
+                                    <li>• KPI Systems</li>
+                                    <li>• Profitability Models</li>
+                                    <li>• Scenario Simulation</li>
+                                    <li>• Strategic Scoring</li>
+                                    <li>• Data War Rooms</li>
+                                </ul>
+                                <span class="detail-label">The Metric</span>
+                                <p class="metric">Predictive Confidence</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="matrix-card reveal">
+                        <div class="matrix-card-inner">
+                            <div class="matrix-card-front">
+                                <i class="fas fa-balance-scale"></i>
+                                <h3>Risk Modeling</h3>
+                            </div>
+                            <div class="matrix-card-back">
+                                <span class="detail-label">The Problem</span>
+                                <p class="problem">"Margin erosion due to currency volatility?"</p>
+                                <span class="detail-label">Key Activities</span>
+                                <ul style="list-style: none; font-size: 0.7rem; color: var(--color-gray); margin-bottom: 1rem; columns: 2;">
+                                    <li>• Credit Scoring</li>
+                                    <li>• Demand Forecast</li>
+                                    <li>• Inflation Pricing</li>
+                                    <li>• FX Risk Models</li>
+                                    <li>• Treasury Intel</li>
+                                </ul>
+                                <span class="detail-label">The Metric</span>
+                                <p class="metric">92% Detection Accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="matrix-card reveal">
+                        <div class="matrix-card-inner">
+                            <div class="matrix-card-front">
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Data Compliance</h3>
+                            </div>
+                            <div class="matrix-card-back">
+                                <span class="detail-label">The Problem</span>
+                                <p class="problem">"Regulatory drift risking SI 155/2024 penalties?"</p>
+                                <span class="detail-label">Key Activities</span>
+                                <ul style="list-style: none; font-size: 0.7rem; color: var(--color-gray); margin-bottom: 1rem; columns: 2;">
+                                    <li>• Governance Frameworks</li>
+                                    <li>• Compliance Auditing</li>
+                                    <li>• Data Quality</li>
+                                    <li>• Access Controls</li>
+                                    <li>• SHA-256 Hashing</li>
+                                </ul>
+                                <span class="detail-label">The Metric</span>
+                                <p class="metric">Bulletproof Governance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group C: Operations -->
+                    <div class="matrix-category reveal">
+                        <h4>Group C: Physical & Advanced Operations</h4>
+                        <span class="focus">The Industrial Base // Asset Optimization</span>
+                    </div>
+
+                    <div class="matrix-card reveal">
+                        <div class="matrix-card-inner">
+                            <div class="matrix-card-front">
+                                <i class="fas fa-truck-loading"></i>
+                                <h3>Supply Chain Logic</h3>
+                            </div>
+                            <div class="matrix-card-back">
+                                <span class="detail-label">The Problem</span>
+                                <p class="problem">"High 'Cost of Service' and inventory friction?"</p>
+                                <span class="detail-label">Key Activities</span>
+                                <ul style="list-style: none; font-size: 0.7rem; color: var(--color-gray); margin-bottom: 1rem; columns: 2;">
+                                    <li>• Inventory Opt.</li>
+                                    <li>• Route Optimization</li>
+                                    <li>• Procurement Intel</li>
+                                    <li>• Production Forecast</li>
+                                    <li>• Predictive Maint.</li>
+                                </ul>
+                                <span class="detail-label">The Metric</span>
+                                <p class="metric">Zero Friction Logistics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="matrix-card reveal">
+                        <div class="matrix-card-inner">
+                            <div class="matrix-card-front">
+                                <i class="fas fa-microscope"></i>
+                                <h3>AI Experimental</h3>
+                            </div>
+                            <div class="matrix-card-back">
+                                <span class="detail-label">The Problem</span>
+                                <p class="problem">"Standard solutions failing unique challenges?"</p>
+                                <span class="detail-label">Key Activities</span>
+                                <ul style="list-style: none; font-size: 0.7rem; color: var(--color-gray); margin-bottom: 1rem; columns: 2;">
+                                    <li>• ML Experimentation</li>
+                                    <li>• NLP Systems</li>
+                                    <li>• HPC Modeling</li>
+                                    <li>• Custom AI Arch.</li>
+                                    <li>• Stochastic Research</li>
+                                </ul>
+                                <span class="detail-label">The Metric</span>
+                                <p class="metric">The Cutting Edge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: The Strategic Path Navigator (The Advisor Move) -->
+        <section class="navigator-section">
+            <div class="local-data-rain" id="navigator-rain"></div>
+            <div class="container">
+                <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 0.9rem; color: var(--insight-accent); text-transform: uppercase; letter-spacing: 0.4em; margin-bottom: 1.5rem;">The Advisor View</h2>
+                    <h3 style="font-size: 2.5rem;">Choose Your Objective.</h3>
+                </div>
+
+                <div class="path-container">
+                    <!-- Path 1 -->
+                    <div class="path-item reveal">
+                        <div class="path-goal">
+                            <span class="obj-no">Objective 01</span>
+                            "I want to scale retail sales."
+                        </div>
+                        <div class="path-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <div class="path-deploy">
+                            <span class="deploy-title">Customer Intel + AI Automation</span>
+                            <span class="deploy-desc">Predicting future churn while automating the acquisition engine.</span>
+                        </div>
+                    </div>
+
+                    <!-- Path 2 -->
+                    <div class="path-item reveal">
+                        <div class="path-goal">
+                            <span class="obj-no">Objective 02</span>
+                            "I'm worried about currency shocks."
+                        </div>
+                        <div class="path-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <div class="path-deploy">
+                            <span class="deploy-title">Financial Modeling + Decision Intel</span>
+                            <span class="deploy-desc">ZiG/USD risk normalization and scenario simulations.</span>
+                        </div>
+                    </div>
+
+                    <!-- Path 3 -->
+                    <div class="path-item reveal">
+                        <div class="path-goal">
+                            <span class="obj-no">Objective 03</span>
+                            "I need to protect my brand legally."
+                        </div>
+                        <div class="path-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <div class="path-deploy">
+                            <span class="deploy-title">Data Governance + SI 155/2024</span>
+                            <span class="deploy-desc">Establishing SHA-256 integrity and robust privacy auditing.</span>
+                        </div>
+                    </div>
+
+                    <!-- Path 4 -->
+                    <div class="path-item reveal">
+                        <div class="path-goal">
+                            <span class="obj-no">Objective 04</span>
+                            "I need my machinery to last longer."
+                        </div>
+                        <div class="path-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <div class="path-deploy">
+                            <span class="deploy-title">Supply Chain + Predictive Maint.</span>
+                            <span class="deploy-desc">Eliminating operational drag through route logic optimization.</span>
+                        </div>
+                    </div>
+
+                    <!-- Path 5 -->
+                    <div class="path-item reveal">
+                        <div class="path-goal">
+                            <span class="obj-no">Objective 05</span>
+                            "I need to automate high-volume paperwork."
+                        </div>
+                        <div class="path-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <div class="path-deploy">
+                            <span class="deploy-title">AI Automation + Executive BI</span>
+                            <span class="deploy-desc">OCR pipelines paired with real-time document oversight portals.</span>
+                        </div>
+                    </div>
+
+                    <!-- Path 6 -->
+                    <div class="path-item reveal">
+                        <div class="path-goal">
+                            <span class="obj-no">Objective 06</span>
+                            "I want to predict my cash flow accurately."
+                        </div>
+                        <div class="path-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <div class="path-deploy">
+                            <span class="deploy-title">Risk Modeling + Revenue Analytics</span>
+                            <span class="deploy-desc">Demand forecasting and currency-adjusted treasury intelligence.</span>
+                        </div>
+                    </div>
+
+                    <!-- Path 7 -->
+                    <div class="path-item reveal">
+                        <div class="path-goal">
+                            <span class="obj-no">Objective 07</span>
+                            "I'm launching in a volatile market."
+                        </div>
+                        <div class="path-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <div class="path-deploy">
+                            <span class="deploy-title">Decision Intel + AI Experimental</span>
+                            <span class="deploy-desc">Stochastic research and HPC-powered scenario modeling.</span>
+                        </div>
+                    </div>
+
+                    <!-- Path 8 -->
+                    <div class="path-item reveal">
+                        <div class="path-goal">
+                            <span class="obj-no">Objective 08</span>
+                            "I need to audit our data integrity."
+                        </div>
+                        <div class="path-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <div class="path-deploy">
+                            <span class="deploy-title">Data Governance + BI Dashboards</span>
+                            <span class="deploy-desc">Quality frameworks and live operational tracking systems.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Impact Ledger (What we have done) -->
+        <section class="impact-ledger-section">
+            <div class="container reveal">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 0.9rem; color: var(--insight-accent); text-transform: uppercase; letter-spacing: 0.4em; margin-bottom: 1.5rem;">Proof of Intelligence</h2>
+                    <h3 style="font-size: 2.5rem; color: var(--color-white);">The Impact Ledger.</h3>
+                </div>
+
+                <div class="ledger-container">
+                    <table class="ledger-table">
+                        <tr class="ledger-row reveal">
+                            <td>
+                                <strong>National Retail Scale</strong>
+                                <span class="case-title">Major Retailer</span>
+                            </td>
+                            <td>Managing a digital catalog of 1,000 products during currency transition.</td>
+                            <td>
+                                <strong>1,100% Growth</strong>
+                                Scaled to 12,000+ products; analyzed 976k records with zero data loss.
+                            </td>
+                        </tr>
+                        <tr class="ledger-row reveal">
+                            <td>
+                                <strong>Industrial Pivot</strong>
+                                <span class="case-title">20-Year Contractor</span>
+                            </td>
+                            <td>Moving traditional construction into high-end digital retail.</td>
+                            <td>
+                                <strong>Strategic Transformation</strong>
+                                Architected a "Digital Luxury" sales system and automated lead gen.
+                            </td>
+                        </tr>
+                        <tr class="ledger-row reveal">
+                            <td>
+                                <strong>Global E-commerce</strong>
+                                <span class="case-title">International Retail</span>
+                            </td>
+                            <td>Maintaining 100% uptime for high-traffic global platforms.</td>
+                            <td>
+                                <strong>System Resilience</strong>
+                                Developed secure full-stack architectures (Django/React) on high-perf VPS.
+                            </td>
+                        </tr>
+                        <tr class="ledger-row reveal">
+                            <td>
+                                <strong>Predictive Research</strong>
+                                <span class="case-title">Emerging Markets</span>
+                            </td>
+                            <td>Detecting "Silent Churn" in volatile economic cycles.</td>
+                            <td>
+                                <strong>20.65% Error Reduction</strong>
+                                Achieved elite accuracy in CLV forecasting via Stacked Ensembles.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Live Impact Counter Bar -->
+                <div class="impact-metrics-bar reveal">
+                    <div class="metric-item">
+                        <span class="number" data-target="976328">0</span>
+                        <span class="label">Records Normalized</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="number" data-target="247200" data-prefix="$">0</span>
+                        <span class="label">Annualized ROI Identified</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: The Boardroom Cockpit (Live Demo) -->
+        <section class="cockpit-section">
+            <div class="container reveal">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--color-white); margin-bottom: 1.5rem;">The Boardroom Cockpit.</h2>
+                    <p style="color: var(--color-gray); font-size: 1.1rem; max-width: 700px; margin: 0 auto;">Real-time strategic oversight of your entire enterprise ecosystem.</p>
+                </div>
+                
+                <div class="dashboard-stage">
+                    <div class="dashboard-mockup">
+                        <img src="executive_insight_cockpit_dashboard.png" alt="Executive Strategic Cockpit">
+                        
+                        <!-- Intelligence Nodes (Aligned to Dashboard) -->
+                        <div class="intel-node" style="top: 35%; left: 38%;">
+                            <div class="node-tooltip">
+                                <strong>ROI Velocity</strong>
+                                Identifying +18.4% growth trajectories through real-time predictive modeling.
+                            </div>
+                        </div>
+
+                        <div class="intel-node" style="top: 35%; left: 56%;">
+                            <div class="node-tooltip">
+                                <strong>Market Clusters</strong>
+                                Isolating 'Champion' segments through high-dimensional stochastic grouping.
+                            </div>
+                        </div>
+
+                        <div class="intel-node" style="top: 43%; left: 79%;">
+                            <div class="node-tooltip">
+                                <strong>Confidence Score</strong>
+                                94% probabilistic certainty achieved through ZCHPC-accelerated simulations.
+                            </div>
+                        </div>
+
+
+                        <!-- System Feed -->
+                        <div class="system-feed">
+                            <div class="feed-line">> INITIALIZING LOGIC_ENGINE...</div>
+                            <div class="feed-line">> LOADING ZCHPC CLUSTER_04...</div>
+                            <div class="feed-line">> ANALYZING ZIG_TRANSITION_PATTERN...</div>
+                            <div class="feed-line">> PREDICTIVE_ACCURACY: 94.2%</div>
+                            <div class="feed-line">> SYSTEM READY.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 5: The Unfair Advantage (Prestige Layer) -->
+        <section class="section-cyan">
+            <div class="container reveal">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+                    <div>
+                        <h4 style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem;">ZCHPC Integration</h4>
+                        <p class="prestige-value">Supercomputing Pedigree.</p>
+                        <p>Our models are engineered and stress-tested on High-Performance Computing (HPC) clusters, providing a level of precision unavailable to standard agencies.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem;">Academic Rigour</h4>
+                        <p class="prestige-value">1st-Class ML Architecture.</p>
+                        <p>Grounded in research on Machine Learning and General Linear Models. We apply world-class stochastic theory to the unique Zimbabwean reality.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem;">Market Context</h4>
+                        <p class="prestige-value">Currency Resilience Specialists.</p>
+                        <p>Experts in the ZWL-to-ZiG transition. We ensure your "Golden Thread" of data remains unbroken regardless of currency shifts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: The Final CTA (Strategic Audit Form) -->
+        <section class="audit-section-prestige" id="audit-form">
+            <div class="container reveal">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto; margin-bottom: 4rem;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--color-white);">Ready to move from Data-Rich to <span style="color: var(--insight-accent);">Insight-Driven?</span></h2>
+                    <p style="font-size: 1.1rem; color: var(--color-gray);">Initiate your preliminary Strategic Audit to identify your intelligence moats.</p>
+                </div>
+
+                <div class="audit-form-grid">
+                    <!-- Form Side -->
+                    <div class="audit-form-container-dark">
+                        <form id="strategicAuditForm" action="https://formspree.io/f/mjglllyo" method="POST">
+                            <div class="audit-field">
+                                <label>1. Primary Strategic Objective</label>
+                                <select id="auditService" name="strategic_objective" required>
+                                    <option value="" disabled selected>Select Your Priority...</option>
+                                    <option value="customer">Customer Intelligence & Revenue Analytics</option>
+                                    <option value="decision">Executive Decision Intelligence</option>
+                                    <option value="automation">AI-Powered Business Automation</option>
+                                    <option value="bi">Advanced BI & Operational Dashboards</option>
+                                    <option value="risk">Financial Modeling & Risk Management</option>
+                                    <option value="supply">Supply Chain & Logistics Analytics</option>
+                                    <option value="governance">Data Governance & Compliance</option>
+                                    <option value="research">Experimental AI & Statistical Research</option>
+                                </select>
+                            </div>
+
+                            <div class="audit-field">
+                                <label>2. Data Scale (Approx. Monthly Records)</label>
+                                <input type="text" name="data_scale" placeholder="e.g. 50,000+ transaction records" required>
+                            </div>
+
+                            <div class="audit-field">
+                                <label>3. Current Operational Obstacle</label>
+                                <textarea rows="1" name="obstacle" placeholder="e.g. Currency volatility, Silent churn, Supply drag..." required></textarea>
+                            </div>
+
+                            <div class="audit-field">
+                                <label>4. Executive Contact</label>
+                                <input type="email" name="email" placeholder="official@enterprise.com" required>
+                            </div>
+
+                            <button type="submit" class="btn-prestige" style="width: 100%; margin-top: 2rem;">
+                                <span>Initiate Boardroom Review</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Analysis Side (Visual Proof) -->
+                    <div class="audit-analysis-panel-prestige reveal">
+                        <div class="analysis-status">
+                            <div class="status-pulse"></div>
+                            <span>Logic Engine: Ready for Input</span>
+                        </div>
+                        <div class="analysis-content" id="analysisContent">
+                            <h4>Awaiting Parameters...</h4>
+                            <p>Select a strategic objective to view the specialized Logic League deployment moat for your enterprise.</p>
+                            <div class="moat-tag">Logic Readiness: 0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
