@@ -50,12 +50,13 @@ body {
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 900px;
-    height: 500px;
+    max-width: 1000px;
+    height: 750px; /* Increased height for profile aspect ratio */
     margin: 6rem auto;
     overflow: hidden;
     border: 1px solid var(--designs-border);
     box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+    background: #000;
 }
 
 .slider-img {
@@ -65,7 +66,7 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: left center;
 }
 
 .img-before {
@@ -75,30 +76,56 @@ body {
 .img-after {
     background-image: url('after_luxury.png');
     width: 50%; /* Initial split */
-    border-right: 2px solid var(--designs-accent);
+    border-right: 3px solid var(--designs-accent);
+    z-index: 2;
 }
+
+
+
 
 .slider-handle {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 2px;
+    width: 4px;
     height: 100%;
     background: var(--designs-accent);
     cursor: ew-resize;
     z-index: 10;
+    box-shadow: 0 0 20px var(--designs-accent);
+}
+
+.slider-handle::after {
+    content: '↔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: var(--designs-accent);
+    color: var(--designs-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
 }
 
 .slider-label {
     position: absolute;
-    bottom: 20px;
-    padding: 10px 20px;
-    background: rgba(0,0,0,0.8);
+    top: 20px; /* Moved to top for better visibility */
+    padding: 8px 15px;
+    background: rgba(0,0,0,0.85);
     font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
+    z-index: 5;
+    border: 1px solid rgba(255,255,255,0.1);
 }
+
 
 .label-before { right: 20px; color: var(--color-gray); }
 .label-after { left: 20px; color: var(--designs-accent); }
@@ -168,54 +195,85 @@ body {
 
 /* --- Tiers / Pricing --- */
 .tier-section {
-    padding: 120px 0;
+    padding: 150px 0;
+    background: linear-gradient(180deg, #03070e 0%, #000 100%);
 }
 
 .tier-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 5rem;
+    align-items: center;
 }
 
 .designs-tier {
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(255, 255, 255, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 4rem 3rem;
+    border-top: 2px solid transparent;
+    padding: 4rem 2rem;
     text-align: center;
-    transition: var(--transition-prestige);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pins buttons to bottom */
+    min-height: 650px; /* Uniform height */
 }
 
 .designs-tier:hover {
     border-color: var(--designs-accent);
     background: rgba(212, 175, 55, 0.03);
-    transform: scale(1.02);
+    transform: translateY(-10px);
 }
 
 .designs-tier.featured {
-    border-color: var(--designs-accent);
-    background: rgba(212, 175, 55, 0.05);
-    position: relative;
+    border-top: 4px solid var(--designs-accent);
+    background: rgba(212, 175, 55, 0.08);
+    transform: scale(1.05); /* Make it stand out more */
+    z-index: 2;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+}
+
+.designs-tier h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #fff;
 }
 
 .tier-price {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     color: var(--designs-accent);
     margin: 2rem 0;
+    font-family: var(--font-heading);
+}
+
+.designs-tier p {
+    color: var(--designs-text-dim);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex-grow: 1; /* Pushes price/button down */
 }
 
 .btn-designs {
-    padding: 1.2rem 2.5rem;
+    padding: 1rem 2rem;
     border: 1px solid var(--designs-accent);
     color: var(--designs-accent);
     background: transparent;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    font-size: 0.75rem;
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .btn-designs:hover {
@@ -223,6 +281,15 @@ body {
     color: var(--designs-bg);
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
 }
+
+.designs-tier .data-badge {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--designs-accent);
+    border: 1px solid var(--designs-border);
+    width: fit-content;
+    margin: 0 auto;
+}
+
 
 /* --- Portfolio Showcase --- */
 .portfolio-card {

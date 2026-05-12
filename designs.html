@@ -1,93 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Creative Gallery | Logic League Designs</title>
+    <title>Designs | Logic League Visual Authority</title>
+    <meta name="description" content="Logic League Designs: Crafting the Visual Identity of Industry Leaders. Strategic Branding, Executive Communications, and Digital Luxury.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="designs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-    <div class="impact-ribbon">
-        <div class="ribbon-content">
-            1,100% Inventory Growth Achieved &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 976,328 Transaction Records Processed &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 20.65% RMSE Reduction in Predictive Modeling &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; SI 155/2024 Compliant Governance &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; HPC Pedigree (ZCHPC)
-        </div>
-    </div>
-
-    <nav>
-        <a href="index.html" class="logo" style="text-decoration: none; color: inherit; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem;">LOGIC LEAGUE <span style="color: var(--color-red);">COOPERATION</span></a>
-        <div class="command-bar">
-            <i class="fas fa-terminal"></i>
-            <input type="text" id="commandInput" placeholder="What strategic problem are we solving today?">
-        </div>
-        <div class="nav-links" style="display: flex; gap: 1.5rem;">
-            <a href="insight.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Strategy</a>
-            <a href="digital-lab.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Systems</a>
-            <a href="designs.html" style="text-decoration: none; color: var(--color-red); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Creative</a>
-            <a href="case-studies.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Proof</a>
-            <a href="audit.html" style="text-decoration: none; color: var(--color-red); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Audit</a>
-        </div>
-    </nav>
-
-    <header class="hero" style="min-height: 60vh; background-image: url('hero_prestige.png');">
-        <div class="container">
-            <div class="hero-content reveal">
-                <span class="data-badge">Portal 03 // The Voice</span>
-                <h1>Logic League Designs.</h1>
-                <p style="font-size: 1.4rem; color: var(--color-gray);">Luxury visual identities that command boardroom respect.</p>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
-        <section class="section-navy">
-            <div class="container">
-                <div class="reveal">
-                    <h2>The Psychology of "Quiet Luxury"</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
-                        <div class="portal-card signature-designs">
-                            <h3 style="margin-bottom: 1.5rem;">Visual Authority</h3>
-                            <p style="color: var(--color-gray);">We don't just create graphics; we architect brand authority. By leveraging psychological principles of high-end consumer behavior, we design identities that signal stability, prestige, and "Quiet Luxury."</p>
-                        </div>
-                        <div class="portal-card signature-designs">
-                            <h3 style="margin-bottom: 1.5rem;">Our Showcase</h3>
-                            <p style="color: var(--color-gray);">From industrial giants to global e-commerce pioneers. Our work for <strong>A Team Contractors</strong> and <strong>Nuareskyn Poland</strong> demonstrates the power of consistent, elite visual storytelling.</p>
-                        </div>
+        <!-- Section 1: Executive Positioning -->
+        <section class="designs-hero">
+            <div class="container reveal">
+                <span class="data-badge" style="margin-bottom: 2rem; color: var(--designs-accent);">Division // Designs</span>
+                <h1 style="color: var(--color-white);">Crafting the <span class="gold-text">Visual Identity</span> <br>of Industry Leaders.</h1>
+                <p style="font-size: 1.25rem; color: var(--designs-text-dim); max-width: 650px; margin-bottom: 3rem; line-height: 1.6;">
+                    We translate technical strength and complex strategies into luxury brand experiences that command respect in the boardroom.
+                </p>
+                
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#portfolio" class="btn-designs">View Authority Portfolio</a>
+                    <a href="#tiers" class="btn-strategic" style="background: transparent; border: 1px solid var(--color-slate); color: var(--color-white);">View Pricing Tiers</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Before & After (Visual Authority Slider) -->
+        <section style="background: #000;">
+            <div class="container reveal">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--color-white); margin-bottom: 1rem;">Visual Authority is Non-Negotiable.</h2>
+                    <p style="color: var(--designs-text-dim); max-width: 700px; margin: 0 auto;">
+                        If your profile looks like a student project, you’ve already lost the contract. We ensure your visual voice matches your strategic intelligence.
+                    </p>
+                </div>
+
+                <div class="slider-container" id="beforeAfterSlider">
+                    <!-- Before: Amateur Standard -->
+                    <div class="slider-img img-before"></div>
+                    
+                    <!-- After: Authentic Logic League Design (Your A-Team Profile) -->
+                    <div class="slider-img img-after" id="afterImage"></div>
+
+                    <div class="slider-handle" id="sliderHandle"></div>
+                    <div class="slider-label label-before">Amateur Standard</div>
+                    <div class="slider-label label-after">Logic League Luxury</div>
+                </div>
+
+
+                
+                <p style="text-align: center; margin-top: 2rem; color: var(--designs-accent); font-family: var(--font-mono); font-size: 0.8rem;">
+                    [ DRAG SLIDER TO SEE TRANSFORMATION ]
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Design Domains (Capabilities) -->
+        <section id="capabilities">
+            <div class="container reveal">
+                <div class="domain-grid">
+                    <!-- Domain 1 -->
+                    <div class="domain-card">
+                        <h4>Domain 01</h4>
+                        <h3>Brand Identity Systems</h3>
+                        <p>We engineer cohesive visual operating systems—identity, typography, and brand psychology—that communicate absolute stability.</p>
+                        <div class="outcome">> Outcome: A unified Visual OS that signals 20 years of authority.</div>
+                    </div>
+
+                    <!-- Domain 2 -->
+                    <div class="domain-card">
+                        <h4>Domain 02</h4>
+                        <h3>Executive Communications</h3>
+                        <p>High-stakes Company Profiles and Tender Decks designed specifically to win multi-million dollar boardroom bids.</p>
+                        <div class="outcome">> Outcome: Contract-Winning Materials that secure high-level partnerships.</div>
+                    </div>
+
+                    <!-- Domain 3 -->
+                    <div class="domain-card">
+                        <h4>Domain 03</h4>
+                        <h3>Digital Experience Design</h3>
+                        <p>Architecting data-informed interfaces for e-commerce engines and admin portals, designed to convert visitors into high-value clients.</p>
+                        <div class="outcome">> Outcome: Reducing friction while amplifying prestige.</div>
+                    </div>
+
+                    <!-- Domain 4 -->
+                    <div class="domain-card">
+                        <h4>Domain 04</h4>
+                        <h3>Strategic Data Viz</h3>
+                        <p>Transforming complex patterns from Logic League Insight into clean, high-impact visuals for rapid boardroom decision-making.</p>
+                        <div class="outcome">> Outcome: Making complex intelligence instantly understandable.</div>
+                    </div>
+
+                    <!-- Domain 5 -->
+                    <div class="domain-card">
+                        <h4>Domain 05</h4>
+                        <h3>Marketing Systems</h3>
+                        <p>Scalable asset systems for high-impact social media and campaign growth. Moving beyond flyers to digital communication engines.</p>
+                        <div class="outcome">> Outcome: Professional marketing fuel for the growth engine.</div>
+                    </div>
+
+                    <!-- Domain 6 -->
+                    <div class="domain-card">
+                        <h4>Domain 06</h4>
+                        <h3>Motion & Video</h3>
+                        <p>Cinematic corporate showcases and brand launch videos that dramatically elevate the perceived value of your organization.</p>
+                        <div class="outcome">> Outcome: Prestige Storytelling for a modern market.</div>
+                    </div>
+
+                    <!-- Domain 7 -->
+                    <div class="domain-card">
+                        <h4>Domain 07</h4>
+                        <h3>Packaging Systems</h3>
+                        <p>Luxury product presentation and labeling that justifies premium pricing. Perceived value amplification for retail leaders.</p>
+                        <div class="outcome">> Outcome: Justifying premium pricing through visual excellence.</div>
+                    </div>
+
+                    <!-- Domain 8 -->
+                    <div class="domain-card">
+                        <h4>Domain 08</h4>
+                        <h3>Environmental Branding</h3>
+                        <p>Unifying physical identity—signage, office, and exhibition branding—with your digital excellence.</p>
+                        <div class="outcome">> Outcome: A consistent physical identity for the modern enterprise.</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-white">
+        <!-- Section 4: The Signature Hook (Executive Influence Design) -->
+        <section id="executive-hook" style="background: var(--designs-accent); color: var(--designs-bg);">
             <div class="container reveal">
-                <h2 style="color: var(--color-navy);">Luxury Aesthetics.</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; color: var(--color-navy);">
+                <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; align-items: center;">
                     <div>
-                        <h4 style="color: var(--color-red);">Executive Profiles</h4>
-                        <p>High-end corporate profiles, layout, and copywriting for board-level presentation.</p>
+                        <span class="m-badge" style="color: rgba(0,0,0,0.6);">Signature // The Hook</span>
+                        <h2 style="font-size: 3rem; margin: 1.5rem 0; font-weight: 800;">The Executive Corporate Profile: Your Most Powerful Sales Asset.</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+                            We don’t design PDFs. We engineer narrative-driven authority documents. By combining business psychology and luxury aesthetics, we help our clients win tenders and secure high-level partnerships.
+                        </p>
+                        <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700;">// This is Executive Influence Design.</div>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.1); padding: 3rem; border: 1px solid rgba(0,0,0,0.1);">
+                        <p style="font-style: italic; margin-bottom: 0;">"The A Team Contractors Win: How we transformed a traditional manufacturer into a Digital Luxury brand, increasing their perceived market value for high-end retail dominance."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Design Philosophy -->
+        <section class="philosophy-section">
+            <div class="container reveal">
+                <h2 style="font-size: 2rem; color: var(--designs-accent); margin-bottom: 4rem;">The Digital Luxury Philosophy</h2>
+                <div class="philosophy-grid">
+                    <div class="philosophy-item">
+                        <h3>Minimalism</h3>
+                        <p style="color: var(--designs-text-dim);">Excellence doesn't need to shout. We use clean space to signal absolute confidence.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h3>Precision</h3>
+                        <p style="color: var(--designs-text-dim);">Every pixel is placed with intent, backed by the strategic goals of the Cooperation.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h3>Consistency</h3>
+                        <p style="color: var(--designs-text-dim);">Your brand speaks with one voice across every physical and digital touchpoint.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: The "Synergy" Sell -->
+        <section style="background: linear-gradient(180deg, #03070e 0%, #0a192f 100%);">
+            <div class="container reveal">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="reveal">
+                        <div style="border: 1px solid var(--designs-border); padding: 4rem; background: rgba(255,255,255,0.01);">
+                            <h2 style="color: var(--color-white); margin-bottom: 2rem;">The Power of Synergy.</h2>
+                            <p style="color: var(--designs-text-dim); line-height: 1.8; margin-bottom: 2rem;">
+                                A system from our <strong>Digital Lab</strong> is built to perform. A strategy from <strong>Insight</strong> is built to win. <strong>Designs</strong> ensures the world sees that power immediately.
+                            </p>
+                            <p style="color: var(--designs-accent); font-family: var(--font-mono); font-size: 0.8rem;">
+                                // DESIGN POWERS EXECUTION
+                            </p>
+                        </div>
                     </div>
                     <div>
-                        <h4 style="color: var(--color-red);">Brand Realignment</h4>
-                        <p>Transitioning legacy firms into the digital luxury market with precision identity shifts.</p>
+                        <h3 style="color: var(--color-white); margin-bottom: 1.5rem;">Visual Authority is the "Voice" of your organization.</h3>
+                        <p style="color: var(--designs-text-dim);">Without it, your technical intelligence remains invisible to the people who matter most: your future clients.</p>
                     </div>
-                    <div>
-                        <h4 style="color: var(--color-red);">Digital Assets</h4>
-                        <p>Video editing and graphic design for high-performance marketing ecosystems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Portfolio Showcase -->
+        <section id="portfolio" style="padding-top: 150px;">
+            <div class="container reveal">
+                <h2 style="font-size: 2.5rem; color: var(--color-white); margin-bottom: 5rem; text-align: center;">Featured Works of Authority</h2>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-visual" style="background-image: url('after_luxury.png'); background-color: #111;"></div>
+                    <div class="portfolio-info">
+                        <span class="data-badge" style="color: var(--designs-accent);">Modernization Case // A Team</span>
+                        <h3>The Digital Luxury Rebrand</h3>
+                        <p style="color: var(--designs-text-dim); margin: 2rem 0;">Transforming a traditional manufacturer into a premier retail brand through a 15-page luxury corporate profile and visual identity system.</p>
+                        <a href="#" class="btn-designs" style="width: fit-content;">Study Case</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" style="direction: rtl;">
+                    <div class="portfolio-visual" style="background-image: url('hero_prestige.png'); filter: grayscale(1); background-color: #111;"></div>
+                    <div class="portfolio-info" style="direction: ltr;">
+                        <span class="data-badge" style="color: var(--designs-accent-pink);">UI/UX Case // Nuareskyn</span>
+                        <h3>Global Commerce Platform</h3>
+                        <p style="color: var(--designs-text-dim); margin: 2rem 0;">Architecting a high-end beauty e-commerce interface for international markets, focusing on minimal friction and luxury retention.</p>
+                        <a href="#" class="btn-designs" style="width: fit-content; border-color: var(--designs-accent-pink); color: var(--designs-accent-pink);">Explore Interface</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Pricing Tiers -->
+        <section id="tiers" class="tier-section">
+            <div class="container reveal">
+                <div style="text-align: center; margin-bottom: 5rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--color-white);">Investment Tiers</h2>
+                    <p style="color: var(--designs-text-dim);">Strategic value based on organizational impact.</p>
+                </div>
+
+                <div class="tier-container">
+                    <div class="designs-tier">
+                        <span class="data-badge">Tier 01</span>
+                        <h3>Individual Asset</h3>
+                        <p style="color: var(--designs-text-dim);">Single premium digital flyer, social media identity, or executive presentation slide.</p>
+                        <div class="tier-price">$25</div>
+                        <a href="audit.html" class="btn-designs">Start Project</a>
+                    </div>
+
+                    <div class="designs-tier featured">
+                        <span class="data-badge" style="background: var(--designs-accent); color: var(--designs-bg);">Recommended</span>
+                        <h3 style="margin-top: 1rem;">The Authority Pack</h3>
+                        <p style="color: var(--designs-text-dim);">Comprehensive Company Profile (10-15 Pages) + Full Business Identity System.</p>
+                        <div class="tier-price">$150 - $250</div>
+                        <a href="audit.html" class="btn-designs" style="background: var(--designs-accent); color: var(--designs-bg);">Establish Authority</a>
+                    </div>
+
+                    <div class="designs-tier">
+                        <span class="data-badge">Tier 03</span>
+                        <h3>Transformation Pack</h3>
+                        <p style="color: var(--designs-text-dim);">Full Brand Realignment + Website UI/UX. (Standard with Digital Lab Contracts).</p>
+                        <div class="tier-price">Custom</div>
+                        <a href="audit.html" class="btn-designs">Contact Strategist</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <span class="footer-logo">LOGIC LEAGUE</span>
-            <p class="footer-address">143 Swan Drive, Borrowdale, Harare</p>
-            <p style="font-size: 0.7rem; color: var(--color-gray); letter-spacing: 0.1em; text-transform: uppercase;">© 2025 LOGIC LEAGUE COOPERATION</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="app.js"></script>
+    <script>
+        // Before & After Slider Logic
+        const slider = document.getElementById('beforeAfterSlider');
+        const afterImg = document.getElementById('afterImage');
+        const handle = document.getElementById('sliderHandle');
+
+        if (slider && afterImg && handle) {
+            let isResizing = false;
+
+            const onMove = (e) => {
+                if (!isResizing) return;
+                const rect = slider.getBoundingClientRect();
+                let x = (e.pageX || e.touches[0].pageX) - rect.left;
+                
+                // Constraints
+                if (x < 0) x = 0;
+                if (x > rect.width) x = rect.width;
+
+                const percent = (x / rect.width) * 100;
+                afterImg.style.width = percent + '%';
+                handle.style.left = percent + '%';
+            };
+
+            const startResizing = () => isResizing = true;
+            const stopResizing = () => isResizing = false;
+
+            handle.addEventListener('mousedown', startResizing);
+            window.addEventListener('mouseup', stopResizing);
+            window.addEventListener('mousemove', onMove);
+
+            handle.addEventListener('touchstart', startResizing);
+            window.addEventListener('touchend', stopResizing);
+            window.addEventListener('touchmove', onMove);
+        }
+    </script>
 </body>
+
 </html>

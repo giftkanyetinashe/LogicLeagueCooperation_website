@@ -52,9 +52,9 @@ async function loadGlobalComponents() {
             const branding = {
                 'index.html': { name: '// HQ', color: '#D32F2F' },
                 'insight.html': { name: '// Insight', color: '#00E5FF' },
-                'digital-lab.html': { name: '// Digital Lab', color: '#4CAF50' },
-                'designs.html': { name: '// Designs', color: '#FF4081' },
-                'automate.html': { name: '// Automate', color: '#FFD600' },
+                'digital-lab.html': { name: '// Digital Lab', color: '#10B981' },
+                'designs.html': { name: '// Designs', color: '#D4AF37' },
+                'automate.html': { name: '// Automate', color: '#FFBF00' },
                 'audit.html': { name: '// Strategic Audit', color: '#00E5FF' }
             };
             

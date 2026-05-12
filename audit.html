@@ -1,92 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Strategic Audit | Logic League Cooperation</title>
+    <meta name="description" content="Initiate your business transformation with a Logic League Strategic Audit. Elite onboarding for modern enterprise.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="audit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <div class="impact-ribbon">
-        <div class="ribbon-content">
-            1,100% Inventory Growth Achieved &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 976,328 Transaction Records Processed &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 20.65% RMSE Reduction in Predictive Modeling &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; SI 155/2024 Compliant Governance &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; HPC Pedigree (ZCHPC)
-        </div>
-    </div>
-
-    <nav>
-        <a href="index.html" class="logo" style="text-decoration: none; color: inherit; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem;">LOGIC LEAGUE <span style="color: var(--color-red);">COOPERATION</span></a>
-        <div class="command-bar">
-            <i class="fas fa-terminal"></i>
-            <input type="text" id="commandInput" placeholder="What strategic problem are we solving today?">
-        </div>
-        <div class="nav-links" style="display: flex; gap: 1.5rem;">
-            <a href="insight.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Strategy</a>
-            <a href="digital-lab.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Systems</a>
-            <a href="designs.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Creative</a>
-            <a href="case-studies.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Proof</a>
-            <a href="audit.html" style="text-decoration: none; color: var(--color-red); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Audit</a>
-        </div>
-    </nav>
-
-    <header class="hero" style="min-height: 60vh; background-image: url('hero_prestige.png');">
-        <div class="container">
-            <div class="hero-content reveal">
-                <span class="data-badge">Conversion Point // Access Restricted</span>
-                <h1>Request a Strategic Audit.</h1>
-                <p style="font-size: 1.4rem; color: var(--color-gray);">Secure your boardroom session with an advisor, not a vendor.</p>
-            </div>
-        </div>
-    </header>
+<body class="bg-navy">
+    <div id="header-placeholder"></div>
 
     <main>
-        <section class="section-white" style="padding: 100px 0;">
+        <!-- Hero Section -->
+        <section class="audit-hero">
             <div class="container reveal">
-                <div style="max-width: 800px; margin: 0 auto;">
-                    <h2 style="color: var(--color-navy); text-align: center; margin-bottom: 3rem;">Operational Diagnostic</h2>
-                    <form style="background: var(--color-navy); padding: 4rem; border-radius: 4px; box-shadow: 0 30px 60px rgba(10, 25, 47, 0.2);">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
-                            <div>
-                                <label style="display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gray); margin-bottom: 0.5rem;">Full Name</label>
-                                <input type="text" style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 1rem; color: var(--color-white); outline: none;">
+                <span class="data-badge" style="color: var(--audit-accent); border-color: var(--audit-accent);">Command Center // Active</span>
+                <h1>Measure. Map. <br><span style="color: var(--audit-accent);">Multiplied.</span></h1>
+                <p style="color: var(--color-slate); max-width: 800px; margin: 2rem auto; line-height: 1.8; font-size: 1.2rem;">
+                    Every business problem is a systems problem. Logic League Cooperation analyzes your operations, infrastructure, and brand presence before engineering a tailored transformation architecture.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 1: The Matrix (Tabbed) -->
+        <section>
+            <div class="container">
+                <div class="matrix-tabs reveal">
+                    <button class="tab-trigger active" onclick="switchTab('insight')">🧠 Insight</button>
+                    <button class="tab-trigger" onclick="switchTab('lab')">💻 Digital Lab</button>
+                    <button class="tab-trigger" onclick="switchTab('designs')">🎨 Designs</button>
+                    <button class="tab-trigger" onclick="switchTab('automate')">🤖 Automate</button>
+                </div>
+
+                <div id="matrix-content" class="reveal">
+                    <!-- Pillar 1: Insight -->
+                    <div id="insight" class="pillar-section active">
+                        <div class="service-grid">
+                            <div class="service-card">
+                                <div class="card-header">
+                                    <span class="tier-label">Tier 01 // Diagnostic</span>
+                                    <h3>Revenue Leakage Audit</h3>
+                                    <p>A 72-hour deep-dive into your last 24 months of sales. We map exactly where you are losing money to churn and unoptimized marketing.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="card-price">$75+</span>
+                                    <button class="btn-briefing" onclick="selectService('Revenue Leakage Audit', 'Insight')">Initiate</button>
+                                </div>
                             </div>
-                            <div>
-                                <label style="display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gray); margin-bottom: 0.5rem;">Executive Title</label>
-                                <input type="text" style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 1rem; color: var(--color-white); outline: none;">
+                            <div class="service-card">
+                                <div class="card-header">
+                                    <span class="tier-label">Tier 01 // Analysis</span>
+                                    <h3>Customer Segmentation</h3>
+                                    <p>Clustering your database into high-value cohorts to identify your 'Whales' and 'Zombies'.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="card-price">$150+</span>
+                                    <button class="btn-briefing" onclick="selectService('Customer Segmentation', 'Insight')">Initiate</button>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="card-header">
+                                    <span class="tier-label">Tier 02 // Predictive</span>
+                                    <h3>Predictive Churn Engine</h3>
+                                    <p>Fine-tuning ML models to predict which customers are about to leave before they do.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="card-price">$500+</span>
+                                    <button class="btn-briefing" onclick="selectService('Churn Engine', 'Insight')">Initiate</button>
+                                </div>
                             </div>
                         </div>
-                        <div style="margin-bottom: 2rem;">
-                            <label style="display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gray); margin-bottom: 0.5rem;">Corporate Email</label>
-                            <input type="email" style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 1rem; color: var(--color-white); outline: none;">
+                    </div>
+
+                    <!-- Pillar 2: Digital Lab -->
+                    <div id="lab" class="pillar-section">
+                        <div class="service-grid">
+                            <div class="service-card">
+                                <div class="card-header">
+                                    <span class="tier-label">Tier 01 // Infrastructure</span>
+                                    <h3>VPS & Cloud Setup</h3>
+                                    <p>Engineering a secure, private cloud environment for your mission-critical applications.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="card-price">$100+</span>
+                                    <button class="btn-briefing" onclick="selectService('VPS Setup', 'Digital Lab')">Initiate</button>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="card-header">
+                                    <span class="tier-label">Tier 02 // Engineering</span>
+                                    <h3>Enterprise E-commerce</h3>
+                                    <p>Building high-performance sales engines designed for massive scale and African payment integration.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="card-price">$350+</span>
+                                    <button class="btn-briefing" onclick="selectService('E-commerce Engine', 'Digital Lab')">Initiate</button>
+                                </div>
+                            </div>
                         </div>
-                        <div style="margin-bottom: 3rem;">
-                            <label style="display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gray); margin-bottom: 0.5rem;">What is your current biggest operational bottleneck?</label>
-                            <textarea style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 1rem; color: var(--color-white); outline: none; min-height: 150px;"></textarea>
+                    </div>
+
+                    <!-- Pillar 3: Designs -->
+                    <div id="designs" class="pillar-section">
+                        <div class="service-grid">
+                            <div class="service-card">
+                                <div class="card-header">
+                                    <span class="tier-label">Tier 02 // Authority</span>
+                                    <h3>Executive Corporate Profile</h3>
+                                    <p>Narrative-driven authority documents (15+ pages) engineered to win multi-million dollar tenders.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="card-price">$150+</span>
+                                    <button class="btn-briefing" onclick="selectService('Executive Profile', 'Designs')">Initiate</button>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="card-header">
+                                    <span class="tier-label">Tier 03 // Perception</span>
+                                    <h3>Full Identity Transformation</h3>
+                                    <p>A complete visual operating system re-engineering your market perception for prestige dominance.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="card-price">$300+</span>
+                                    <button class="btn-briefing" onclick="selectService('Identity Transformation', 'Designs')">Initiate</button>
+                                </div>
+                            </div>
                         </div>
-                        <div style="text-align: center;">
-                            <button type="button" class="btn btn-red" style="width: 100%;">Secure Your Boardroom Session</button>
+                    </div>
+
+                    <!-- Pillar 4: Automate -->
+                    <div id="automate" class="pillar-section">
+                        <div class="service-grid">
+                            <div class="service-card">
+                                <div class="card-header">
+                                    <span class="tier-label">Tier 01 // Sentinel</span>
+                                    <h3>Intelligent Alert Hub</h3>
+                                    <p>An offline-first device monitoring solar and security with Shona/Ndebele voice AI briefing.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="card-price">$150+</span>
+                                    <button class="btn-briefing" onclick="selectService('Alert Hub', 'Automate')">Initiate</button>
+                                </div>
+                            </div>
                         </div>
-                        <p style="text-align: center; margin-top: 2rem; font-family: 'Fira Code', monospace; font-size: 0.65rem; color: var(--color-cyan);">[ ACCESS RESTRICTED TO CEOS & MANAGING DIRECTORS ]</p>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-navy" style="text-align: center;">
-            <div class="container reveal">
-                <span class="footer-logo">LOGIC LEAGUE</span>
-                <p class="footer-address">143 Swan Drive, Borrowdale, Harare</p>
+        <!-- Section 2: The Request Engine -->
+        <section id="onboarding">
+            <div class="container">
+                <div class="request-engine reveal">
+                    <div class="step-indicator">
+                        <div class="step-progress" id="progressBar"></div>
+                    </div>
+
+                    <form id="auditForm">
+                        <!-- Step 1: Objective -->
+                        <div class="form-step active" id="step-1">
+                            <span class="tier-label" style="color: var(--audit-accent);">Step 01 // Strategic Objective</span>
+                            <h2 style="font-size: 2.5rem; margin: 1rem 0 3rem;">What are we solving today?</h2>
+                            
+                            <div class="option-card" onclick="nextStep(1, 'Insight')">
+                                <i class="fas fa-brain" style="font-size: 2rem; color: var(--audit-accent);"></i>
+                                <div>
+                                    <h4 style="margin: 0;">Operational Intelligence</h4>
+                                    <p style="margin: 0; font-size: 0.8rem; color: var(--color-slate);">Find hidden profit and reduce leakage.</p>
+                                </div>
+                            </div>
+                            <div class="option-card" onclick="nextStep(1, 'Digital Lab')">
+                                <i class="fas fa-microchip" style="font-size: 2rem; color: var(--color-green);"></i>
+                                <div>
+                                    <h4 style="margin: 0;">Infrastructure & Systems</h4>
+                                    <p style="margin: 0; font-size: 0.8rem; color: var(--color-slate);">Build unbreakable digital operations.</p>
+                                </div>
+                            </div>
+                            <div class="option-card" onclick="nextStep(1, 'Designs')">
+                                <i class="fas fa-palette" style="font-size: 2rem; color: var(--color-gold);"></i>
+                                <div>
+                                    <h4 style="margin: 0;">Visual Authority</h4>
+                                    <p style="margin: 0; font-size: 0.8rem; color: var(--color-slate);">Win tenders with high-end perception.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Context -->
+                        <div class="form-step" id="step-2">
+                            <span class="tier-label" style="color: var(--audit-accent);">Step 02 // Operational Scale</span>
+                            <h2 style="font-size: 2.5rem; margin: 1rem 0 3rem;">Tell us about your scale.</h2>
+                            <div style="margin-bottom: 3rem;">
+                                <label style="display: block; font-family: var(--font-mono); font-size: 0.7rem; color: var(--audit-accent); margin-bottom: 1rem;">ESTIMATED MONTHLY VOLUME</label>
+                                <select style="width: 100%; padding: 1.5rem; background: var(--audit-glass); border: 1px solid var(--audit-glass-border); color: #fff;">
+                                    <option>0 - 1,000 Transactions</option>
+                                    <option>1,000 - 10,000 Transactions</option>
+                                    <option>10,000+ Enterprise</option>
+                                </select>
+                            </div>
+                            <div style="margin-bottom: 3rem;">
+                                <label style="display: block; font-family: var(--font-mono); font-size: 0.7rem; color: var(--audit-accent); margin-bottom: 1rem;">CURRENT INFRASTRUCTURE</label>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                    <label style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--audit-glass); border: 1px solid var(--audit-glass-border);">
+                                        <input type="checkbox"> Excel / Manual
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--audit-glass); border: 1px solid var(--audit-glass-border);">
+                                        <input type="checkbox"> Odoo / SAP
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--audit-glass); border: 1px solid var(--audit-glass-border);">
+                                        <input type="checkbox"> Solar / Energy
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-strategic" style="width: 100%; background: var(--audit-accent); color: #000; border: none; padding: 1.5rem;" onclick="nextStep(2)">Proceed to Review</button>
+                        </div>
+
+                        <!-- Step 3: Final Review -->
+                        <div class="form-step" id="step-3">
+                            <span class="tier-label" style="color: var(--audit-accent);">Step 03 // Selection Review</span>
+                            <h2 style="font-size: 2.5rem; margin: 1rem 0 3rem;">Validate Strategic Selection.</h2>
+                            
+                            <div style="background: rgba(255, 255, 255, 0.02); padding: 3rem; border: 1px solid var(--audit-glass-border); margin-bottom: 4rem;">
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                                    <div>
+                                        <label style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--color-slate);">SELECTED PILLAR</label>
+                                        <p id="reviewPillar" style="font-size: 1.5rem; font-weight: 700; margin-top: 0.5rem;">Insight</p>
+                                    </div>
+                                    <div>
+                                        <label style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--color-slate);">TARGET SERVICE</label>
+                                        <p id="reviewService" style="font-size: 1.5rem; font-weight: 700; margin-top: 0.5rem;">Diagnostic Audit</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-strategic" style="width: 100%; background: #fff; color: #000; border: none; padding: 2rem; font-size: 1.2rem; font-weight: 800;" onclick="submitAudit()">Initiate Strategic Audit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer style="background: var(--color-obsidian);">
-        <div class="container">
-            <p style="font-size: 0.7rem; color: var(--color-gray); letter-spacing: 0.1em; text-transform: uppercase; text-align: center;">© 2025 LOGIC LEAGUE COOPERATION // HARARE · WARSAW · GLOBAL</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="app.js"></script>
+    <script>
+        let currentStep = 1;
+        let selectedPillar = 'Insight';
+        let selectedService = 'Revenue Leakage Audit';
+
+        function switchTab(pillarId) {
+            // Update Tab Triggers
+            document.querySelectorAll('.tab-trigger').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Update Sections
+            document.querySelectorAll('.pillar-section').forEach(s => s.classList.remove('active'));
+            document.getElementById(pillarId).classList.add('active');
+        }
+
+        function selectService(service, pillar) {
+            selectedService = service;
+            selectedPillar = pillar;
+            alert("Transformation Selected: " + service + ". Proceeding to Command Center.");
+            document.getElementById('onboarding').scrollIntoView({ behavior: 'smooth' });
+            nextStep(1, pillar);
+        }
+
+        function nextStep(step, pillar) {
+            if (pillar) selectedPillar = pillar;
+            
+            document.getElementById('step-' + step).classList.remove('active');
+            currentStep = step + 1;
+            
+            if (document.getElementById('step-' + currentStep)) {
+                document.getElementById('step-' + currentStep).classList.add('active');
+                
+                // Update Progress Bar
+                const progress = (currentStep / 3) * 100;
+                document.getElementById('progressBar').style.width = progress + '%';
+
+                if (currentStep === 3) {
+                    document.getElementById('reviewPillar').innerText = selectedPillar;
+                    document.getElementById('reviewService').innerText = selectedService;
+                }
+            }
+        }
+
+        function submitAudit() {
+            alert("Audit Initiated. Diagnostic briefing arriving at cooperationlogicleague@gmail.com within 24 hours.");
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
+
 </html>

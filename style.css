@@ -9,12 +9,14 @@
     --color-navy: #0A192F;
     --color-obsidian: #050C16;
     --color-red: #D32F2F;
-    --color-cyan: #00E5FF;
+    --color-cyan: #00E5FF; /* Insight - Cyan */
     --color-white: #F8F9FA;
     --color-slate: #CFD8DC;
     --color-gray: #B0BEC5;
-    --color-gold: #D4AF37;
-    --color-green: #00E676;
+    --color-gold: #D4AF37; /* Designs - Gold */
+    --color-green: #10B981; /* Digital Lab - Emerald */
+    --color-yellow: #FFBF00; /* Automate - Amber */
+
     --font-heading: 'Montserrat', sans-serif;
     --font-heading-alt: 'Inter', sans-serif;
     --font-body: 'Source Sans Pro', sans-serif;
@@ -393,7 +395,9 @@ h2 {
 .synergy-container {
     position: relative;
     width: 600px;
+    max-width: 90vw;
     height: 600px;
+    max-height: 90vw;
     margin: 4rem auto;
     display: flex;
     justify-content: center;
@@ -532,6 +536,31 @@ h2 {
     z-index: 1;
 }
 
+/* --- Responsive Synergy --- */
+@media (max-width: 768px) {
+    .synergy-container {
+        height: 400px;
+        max-height: 80vh;
+    }
+    
+    .synergy-center {
+        width: 100px;
+        height: 100px;
+        font-size: 0.5rem;
+    }
+
+    .synergy-node {
+        width: 80px;
+        height: 80px;
+        font-size: 0.5rem;
+    }
+
+    .node-insight { margin-left: -40px; }
+    .node-lab { margin-top: -40px; }
+    .node-designs { margin-left: -40px; }
+    .node-automate { margin-top: -40px; }
+}
+
 /* --- Pillars Cards --- */
 
 .pillars-grid {
@@ -592,7 +621,7 @@ h2 {
 .pillar-list li {
     font-family: var(--font-mono);
     font-size: 0.75rem;
-    color: var(--color-cyan);
+    color: var(--color-slate);
     margin-bottom: 0.5rem;
 }
 
@@ -601,7 +630,7 @@ h2 {
 }
 
 .pillar-lab h4 {
-    color: var(--color-white);
+    color: var(--color-green);
 }
 
 .pillar-designs h4 {
@@ -609,6 +638,14 @@ h2 {
 }
 
 .pillar-automate h4 {
+    color: var(--color-yellow);
+}
+
+.pillar-insight .pillar-list li {
+    color: var(--color-cyan);
+}
+
+.pillar-lab .pillar-list li {
     color: var(--color-green);
 }
 
@@ -617,7 +654,7 @@ h2 {
 }
 
 .pillar-automate .pillar-list li {
-    color: var(--color-green);
+    color: var(--color-yellow);
 }
 
 /* --- Split Screen Section --- */

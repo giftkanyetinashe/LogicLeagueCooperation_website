@@ -1,0 +1,204 @@
+/* 
+    Logic League Automate: Autonomous Living Systems
+    Theme: Industrial Tech, Edge-AI, Resilience
+    Background: High-Tech White/Light Gray
+    Accent: Automate Gold (#FFD600) or Robotics Teal (#00BFA5)
+*/
+
+:root {
+    --auto-bg: #f8fafc;
+    --auto-card-bg: #ffffff;
+    --auto-accent: #FFD600; /* Automate Gold */
+    --auto-accent-alt: #00BFA5; /* Robotics Teal */
+    --auto-text-main: #1e293b;
+    --auto-text-dim: #64748b;
+    --auto-border: rgba(0, 0, 0, 0.05);
+    --font-heading: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+}
+
+body {
+    background-color: var(--auto-bg);
+    color: var(--auto-text-main);
+    font-family: var(--font-heading);
+}
+
+/* --- Hero Section --- */
+.auto-hero {
+    min-height: 90vh;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.auto-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('hero_automation_abstract.png') no-repeat center right;
+    background-size: contain;
+    opacity: 0.1;
+}
+
+.auto-hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+}
+
+.auto-hero .gold-text {
+    color: var(--auto-accent);
+    text-shadow: 0 0 20px rgba(255, 214, 0, 0.2);
+}
+
+/* --- Problem Grid (The Zim Gap) --- */
+.zim-gap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.gap-card {
+    padding: 3rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border-bottom: 4px solid transparent;
+    transition: 0.3s;
+}
+
+.gap-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--auto-accent);
+}
+
+.gap-card i {
+    font-size: 2rem;
+    color: var(--auto-accent);
+    margin-bottom: 1.5rem;
+}
+
+/* --- Automation Domains --- */
+.auto-domain-list {
+    margin-top: 5rem;
+}
+
+.auto-domain-item {
+    display: grid;
+    grid-template-columns: 100px 1fr 300px;
+    align-items: center;
+    padding: 3rem;
+    border-bottom: 1px solid var(--auto-border);
+    background: white;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+.auto-domain-item:hover {
+    background: #f1f5f9;
+}
+
+.auto-domain-no {
+    font-family: var(--font-mono);
+    color: var(--auto-accent);
+    font-weight: 700;
+}
+
+/* --- Zivo Signature Section --- */
+.zivo-section {
+    background: #0f172a;
+    color: white;
+    padding: 120px 0;
+    border-radius: 40px;
+    margin: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.zivo-visual {
+    width: 100%;
+    height: 400px;
+    background: radial-gradient(circle, var(--auto-accent) 0%, transparent 70%);
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* --- Zivo Sandbox --- */
+.sandbox-container {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.btn-sandbox {
+    background: var(--auto-accent);
+    color: #000;
+    padding: 1.5rem 3rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.3s;
+}
+
+.btn-sandbox:hover {
+    box-shadow: 0 0 40px rgba(255, 214, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* --- Pricing Tiers --- */
+.auto-tier-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.auto-tier {
+    background: white;
+    padding: 4rem 3rem;
+    border: 1px solid var(--auto-border);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.auto-tier:hover {
+    box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+    border-color: var(--auto-accent);
+}
+
+.auto-tier .price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 2rem 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .auto-hero h1 { font-size: 2.5rem; }
+    .auto-tier-grid, .zim-gap-grid, .auto-domain-item {
+        grid-template-columns: 1fr;
+    }
+}
