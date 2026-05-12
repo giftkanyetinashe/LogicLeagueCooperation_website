@@ -208,7 +208,41 @@ body {
     font-style: italic;
 }
 
+/* --- Signature Hook & Synergy Sections --- */
+.executive-hook-grid, .synergy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.executive-hook-grid {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.signature-hook-section, .synergy-sell-section {
+    padding: 120px 0;
+}
+
+@media (max-width: 992px) {
+    .executive-hook-grid, .synergy-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .executive-hook-grid div:last-child,
+    .synergy-grid div:first-child {
+        order: 2;
+    }
+
+    .signature-hook-section h2 {
+        font-size: 2.2rem !important;
+    }
+}
+
 /* --- Design Philosophy --- */
+
 .philosophy-section {
     background: #0a0a0a;
     padding: 100px 0;
