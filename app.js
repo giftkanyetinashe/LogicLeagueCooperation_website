@@ -45,17 +45,24 @@ async function loadGlobalComponents() {
 
         // Apply dynamic branding to the logo
         const logoArm = document.querySelector('.logo-arm');
-        if (logoArm) {
+        const divisionTag = document.querySelector('.division-tag');
+        
+        if (logoArm && divisionTag) {
             const page = window.location.pathname.split('/').pop() || 'index.html';
-            const brandColors = {
-                'index.html': '#D32F2F', // Global Red
-                'insight.html': '#00E5FF', // Insight Cyan
-                'digital-lab.html': '#4CAF50', // Lab Green
-                'designs.html': '#FF4081', // Designs Pink
-                'automate.html': '#FFD600'  // Automate Gold
+            const branding = {
+                'index.html': { name: '// HQ', color: '#D32F2F' },
+                'insight.html': { name: '// Insight', color: '#00E5FF' },
+                'digital-lab.html': { name: '// Digital Lab', color: '#4CAF50' },
+                'designs.html': { name: '// Designs', color: '#FF4081' },
+                'automate.html': { name: '// Automate', color: '#FFD600' },
+                'audit.html': { name: '// Strategic Audit', color: '#00E5FF' }
             };
-            logoArm.style.color = brandColors[page] || brandColors['index.html'];
+            
+            const current = branding[page] || branding['index.html'];
+            logoArm.style.color = current.color;
+            divisionTag.innerText = current.name;
         }
+
 
         // Auto-set active nav link based on current page
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';

@@ -1,0 +1,255 @@
+/* 
+    Logic League Designs: Strategic Branding & Visual Authority
+    Theme: Digital Luxury, Minimalism, Authority
+    Background: Deep Obsidian (#050B16)
+    Accent: Gold (#D4AF37) or Designs Pink (#FF4081)
+*/
+
+:root {
+    --designs-bg: #03070e; /* Even deeper than Navy */
+    --designs-accent: #D4AF37; /* Luxury Gold */
+    --designs-accent-pink: #FF4081;
+    --designs-text-main: #f8f9fa;
+    --designs-text-dim: #94a3b8;
+    --designs-border: rgba(212, 175, 55, 0.2);
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--designs-bg);
+    color: var(--designs-text-main);
+    font-family: var(--font-body);
+}
+
+/* --- Hero Section --- */
+.designs-hero {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.05), transparent 60%);
+    position: relative;
+    padding-top: 100px;
+}
+
+.designs-hero h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+}
+
+.designs-hero .gold-text {
+    background: linear-gradient(135deg, #D4AF37 0%, #F9E29B 50%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Comparison Slider --- */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    margin: 6rem auto;
+    overflow: hidden;
+    border: 1px solid var(--designs-border);
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+}
+
+.slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-before {
+    background-image: url('before_generic.png');
+}
+
+.img-after {
+    background-image: url('after_luxury.png');
+    width: 50%; /* Initial split */
+    border-right: 2px solid var(--designs-accent);
+}
+
+.slider-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--designs-accent);
+    cursor: ew-resize;
+    z-index: 10;
+}
+
+.slider-label {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.8);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.label-before { right: 20px; color: var(--color-gray); }
+.label-after { left: 20px; color: var(--designs-accent); }
+
+/* --- Design Domains Grid --- */
+.domain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.domain-card {
+    padding: 3rem;
+    border-left: 1px solid var(--designs-border);
+    transition: all 0.5s ease;
+    background: linear-gradient(to right, rgba(212, 175, 55, 0.02), transparent);
+}
+
+.domain-card:hover {
+    border-left: 4px solid var(--designs-accent);
+    background: linear-gradient(to right, rgba(212, 175, 55, 0.08), transparent);
+    transform: translateX(10px);
+}
+
+.domain-card h4 {
+    font-size: 0.7rem;
+    color: var(--designs-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-bottom: 1.5rem;
+}
+
+.domain-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.domain-card .outcome {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: var(--designs-accent);
+    font-style: italic;
+}
+
+/* --- Design Philosophy --- */
+.philosophy-section {
+    background: #0a0a0a;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.philosophy-item h3 {
+    font-size: 1.2rem;
+    color: var(--designs-accent);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* --- Tiers / Pricing --- */
+.tier-section {
+    padding: 120px 0;
+}
+
+.tier-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.designs-tier {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 4rem 3rem;
+    text-align: center;
+    transition: var(--transition-prestige);
+}
+
+.designs-tier:hover {
+    border-color: var(--designs-accent);
+    background: rgba(212, 175, 55, 0.03);
+    transform: scale(1.02);
+}
+
+.designs-tier.featured {
+    border-color: var(--designs-accent);
+    background: rgba(212, 175, 55, 0.05);
+    position: relative;
+}
+
+.tier-price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--designs-accent);
+    margin: 2rem 0;
+}
+
+.btn-designs {
+    padding: 1.2rem 2.5rem;
+    border: 1px solid var(--designs-accent);
+    color: var(--designs-accent);
+    background: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-designs:hover {
+    background: var(--designs-accent);
+    color: var(--designs-bg);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+}
+
+/* --- Portfolio Showcase --- */
+.portfolio-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: #000;
+    margin-bottom: 6rem;
+}
+
+.portfolio-info {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-visual {
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .designs-hero h1 { font-size: 2.8rem; }
+    .tier-container, .philosophy-grid, .portfolio-card {
+        grid-template-columns: 1fr;
+    }
+}

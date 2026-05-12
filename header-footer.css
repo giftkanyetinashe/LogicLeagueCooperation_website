@@ -72,6 +72,16 @@
     transition: color 0.5s ease;
 }
 
+.division-tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    opacity: 0.4;
+    letter-spacing: 0;
+    margin-left: 0.5rem;
+    font-weight: 400;
+}
+
+
 .nav-links {
     display: flex;
     align-items: center;
