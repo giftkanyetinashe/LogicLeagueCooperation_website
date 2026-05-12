@@ -210,9 +210,12 @@
     transform-style: preserve-3d;
 }
 
-.matrix-card:hover .matrix-card-inner {
+.matrix-card:hover .matrix-card-inner,
+.matrix-card:active .matrix-card-inner,
+.matrix-card.flipped .matrix-card-inner {
     transform: rotateY(180deg);
 }
+
 
 .matrix-card-front, .matrix-card-back {
     position: absolute;
@@ -1108,7 +1111,19 @@
     padding: 4rem;
     background: rgba(0, 229, 255, 0.02);
     border: 1px solid rgba(0, 229, 255, 0.05);
-    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .impact-metrics-bar {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .metric-item .number {
+        font-size: 2.5rem !important;
+    }
 }
 
 .metric-item .number {

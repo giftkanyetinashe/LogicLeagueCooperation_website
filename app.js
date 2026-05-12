@@ -21,7 +21,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         initPointCloud();
         initCounters();
     }
+    // --- Strategic Service Matrix (Touch Fix) ---
+    const matrixCards = document.querySelectorAll('.matrix-card');
+    matrixCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Check if we are on a touch device or mobile width
+            if (window.innerWidth <= 1024) {
+                // Remove flipped from all other cards first (Optional: focused experience)
+                matrixCards.forEach(c => { if(c !== card) c.classList.remove('flipped'); });
+                // Toggle current card
+                this.classList.toggle('flipped');
+            }
+        });
+    });
 });
+
 
 /**
  * Load Header and Footer from separate files
@@ -128,6 +142,7 @@ function initDataRain(containerId = 'dataRainContainer', color = null) {
         container.appendChild(drop);
     }
 }
+
 
 /**
  * 3D Point Cloud Simulation (Hero Visual)
