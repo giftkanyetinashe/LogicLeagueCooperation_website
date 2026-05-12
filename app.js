@@ -407,16 +407,19 @@ function initNavBehavior() {
  * Animated Counter Engine
  */
 function initCounters() {
-    const counters = document.querySelectorAll('.number');
-    const options = { threshold: 0.5 };
+    const counters = document.querySelectorAll('.number, .impact-number');
+    const options = { threshold: 0.3, rootMargin: '0px 0px -50px 0px' };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const target = entry.target;
-                const endValue = parseInt(target.getAttribute('data-target'));
+                const endValue = parseFloat(target.getAttribute('data-target'));
                 const prefix = target.getAttribute('data-prefix') || '';
-                animateValue(target, 0, endValue, 2000, prefix);
+                const suffix = target.getAttribute('data-suffix') || '';
+                const duration = 2500; // Unified professional duration
+
+                animateValue(target, 0, endValue, duration, prefix, suffix);
                 observer.unobserve(target);
             }
         });
@@ -425,19 +428,34 @@ function initCounters() {
     counters.forEach(counter => observer.observe(counter));
 }
 
-function animateValue(obj, start, end, duration, prefix = '') {
+function animateValue(obj, start, end, duration, prefix = '', suffix = '') {
     let startTimestamp = null;
     const step = (timestamp) => {
         if (!startTimestamp) startTimestamp = timestamp;
         const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        const current = Math.floor(progress * (end - start) + start);
-        obj.innerHTML = prefix + current.toLocaleString();
+        
+        // Use easeOutExpo for a premium feel
+        const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+        
+        const current = easeProgress * (end - start) + start;
+        
+        // Format based on whether it's an integer or float
+        let formatted;
+        if (Number.isInteger(end)) {
+            formatted = Math.floor(current).toLocaleString();
+        } else {
+            formatted = current.toFixed(2);
+        }
+
+        obj.innerHTML = prefix + formatted + suffix;
+
         if (progress < 1) {
             window.requestAnimationFrame(step);
         }
     };
     window.requestAnimationFrame(step);
 }
+
 
 /**
  * Strategic Audit Form Logic
@@ -557,6 +575,8 @@ function initAuditLogic() {
 
 // Call in DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
+    initCounters();
     initAuditLogic();
 });
+
 
