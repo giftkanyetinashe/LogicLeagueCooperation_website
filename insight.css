@@ -187,6 +187,12 @@
     margin-top: 4rem;
 }
 
+@media (max-width: 992px) {
+    .matrix-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .matrix-card {
     background: transparent;
     border: none;
@@ -221,6 +227,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .matrix-card-front, .matrix-card-back {
+        padding: 1.5rem;
+    }
 }
 
 .matrix-card-front i {
@@ -298,6 +310,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 992px) {
+    .matrix-category {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 }
 
 .matrix-category h4 {
@@ -1041,6 +1062,29 @@
     border-right: 1px solid rgba(255, 255, 255, 0.05);
     width: 35%;
 }
+
+@media (max-width: 992px) {
+    .ledger-table, .ledger-table tbody, .ledger-row, .ledger-row td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .ledger-row {
+        margin-bottom: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .ledger-row td {
+        padding: 1.5rem;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .ledger-row td:last-child {
+        border-bottom: none;
+    }
+}
+
 
 .ledger-row strong {
     color: var(--insight-accent);
