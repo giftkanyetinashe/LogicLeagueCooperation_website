@@ -40,6 +40,31 @@ body {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+    .designs-hero {
+        height: auto;
+        padding: 150px 0 80px 0;
+        text-align: center;
+    }
+    .designs-hero h1 {
+        font-size: 2.8rem;
+    }
+    .designs-hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .designs-hero div[style*="display: flex"] {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .btn-designs, .btn-strategic {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+
 .designs-hero .gold-text {
     background: linear-gradient(135deg, #D4AF37 0%, #F9E29B 50%, #B8860B 100%);
     -webkit-background-clip: text;
@@ -57,6 +82,17 @@ body {
     border: 1px solid var(--designs-border);
     box-shadow: 0 40px 100px rgba(0,0,0,0.5);
     background: #000;
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        height: 500px;
+        margin: 3rem auto;
+    }
+    .slider-label {
+        font-size: 0.5rem;
+        padding: 5px 10px;
+    }
 }
 
 .slider-img {
@@ -193,6 +229,13 @@ body {
     text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
 /* --- Tiers / Pricing --- */
 .tier-section {
     padding: 150px 0;
@@ -205,6 +248,16 @@ body {
     gap: 3rem;
     margin-top: 5rem;
     align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .tier-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .designs-tier.featured {
+        transform: scale(1);
+    }
 }
 
 .designs-tier {
@@ -311,6 +364,18 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 500px;
+}
+
+@media (max-width: 992px) {
+    .portfolio-card {
+        grid-template-columns: 1fr;
+    }
+    .portfolio-info {
+        padding: 3rem 2rem;
+    }
+    .portfolio-visual {
+        min-height: 300px;
+    }
 }
 
 /* --- Responsive --- */

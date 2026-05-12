@@ -29,6 +29,16 @@ body.bg-navy {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+    .audit-hero {
+        padding: 120px 0 60px;
+    }
+    .audit-hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+
 /* --- Service Matrix: Tabbed System --- */
 .matrix-tabs {
     display: flex;
@@ -36,6 +46,20 @@ body.bg-navy {
     gap: 1rem;
     margin-bottom: 4rem;
 }
+
+@media (max-width: 768px) {
+    .matrix-tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        margin-bottom: 3rem;
+    }
+    .tab-trigger {
+        padding: 1rem;
+        font-size: 0.6rem;
+    }
+}
+
 
 .tab-trigger {
     padding: 1.2rem 2.5rem;
@@ -95,6 +119,14 @@ body.bg-navy {
     transform: translateY(-5px);
 }
 
+@media (max-width: 768px) {
+    .service-card {
+        padding: 2rem;
+        min-height: auto;
+    }
+}
+
+
 .card-header .tier-label {
     font-family: var(--font-mono);
     font-size: 0.6rem;
@@ -142,6 +174,34 @@ body.bg-navy {
     padding: 6rem;
     margin-top: 150px;
 }
+
+@media (max-width: 768px) {
+    .request-engine {
+        padding: 2.5rem 1.5rem;
+        margin-top: 80px;
+    }
+    .request-engine h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .option-card {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    .option-card i {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Global form grid fixes */
+    div[style*="display: grid; grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 
 .step-indicator {
     height: 2px;
@@ -209,6 +269,6 @@ body.bg-navy {
 
 @media (max-width: 768px) {
     .audit-hero h1 { font-size: 3rem; }
-    .matrix-tabs { flex-direction: column; }
     .request-engine { padding: 3rem; }
 }
+
