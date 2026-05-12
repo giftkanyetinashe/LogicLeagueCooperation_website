@@ -1,98 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Systems Portal | Logic League Digital Lab</title>
+    <title>Digital Lab | Logic League Systems Architecture</title>
+    <meta name="description" content="Logic League Digital Lab: Architecting Unbreakable Business Infrastructure. Enterprise ERP, E-Commerce, and Cloud Management.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="digital-lab.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-    <div class="impact-ribbon">
-        <div class="ribbon-content">
-            1,100% Inventory Growth Achieved &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 976,328 Transaction Records Processed &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 20.65% RMSE Reduction in Predictive Modeling &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; SI 155/2024 Compliant Governance &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; HPC Pedigree (ZCHPC)
-        </div>
-    </div>
-
-    <nav>
-        <a href="index.html" class="logo" style="text-decoration: none; color: inherit; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem;">LOGIC LEAGUE <span style="color: var(--color-red);">COOPERATION</span></a>
-        <div class="command-bar">
-            <i class="fas fa-terminal"></i>
-            <input type="text" id="commandInput" placeholder="What strategic problem are we solving today?">
-        </div>
-        <div class="nav-links" style="display: flex; gap: 1.5rem;">
-            <a href="insight.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Strategy</a>
-            <a href="digital-lab.html" style="text-decoration: none; color: var(--color-red); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Systems</a>
-            <a href="designs.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Creative</a>
-            <a href="case-studies.html" style="text-decoration: none; color: inherit; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Proof</a>
-            <a href="audit.html" style="text-decoration: none; color: var(--color-red); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Audit</a>
-        </div>
-    </nav>
-
-    <header class="hero" style="min-height: 60vh; background-image: url('hero_prestige.png');">
-        <div class="container">
-            <div class="hero-content reveal">
-                <span class="data-badge">Portal 02 // The Body</span>
-                <h1>Logic League Digital Lab.</h1>
-                <p style="font-size: 1.4rem; color: var(--color-gray);">Unbreakable engines for high-performance business operations.</p>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
-        <section class="section-navy">
-            <div class="container">
-                <div class="reveal">
-                    <h2>The "Private Limousine" Hosting Strategy</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
-                        <div class="portal-card signature-lab">
-                            <h3 style="margin-bottom: 1.5rem;">Elite VPS Architecture</h3>
-                            <p style="color: var(--color-gray);">We avoid the "public bus" of shared hosting. Your enterprise deserves the speed, security, and stability of a private limousine. Utilizing isolated AWS and DigitalOcean droplets, we architect zero-downtime environments for global scale.</p>
-                        </div>
-                        <div class="portal-card signature-lab">
-                            <h3 style="margin-bottom: 1.5rem;">The Technical Stack</h3>
-                            <ul style="list-style: none; color: var(--color-cyan); font-family: 'Fira Code', monospace; font-size: 0.9rem; line-height: 2;">
-                                <li>> Django / React / PostgreSQL</li>
-                                <li>> Odoo ERP Specialization</li>
-                                <li>> API & Accounting Automation</li>
-                                <li>> High-Performance Computing (ZCHPC)</li>
-                            </ul>
-                        </div>
+        <!-- Section 1: Executive Positioning -->
+        <section class="lab-hero">
+            <div class="container reveal">
+                <div class="code-accent" style="top: 10%; left: 5%;">system.init(0.854ms)</div>
+                <div class="code-accent" style="top: 15%; right: 10%;">deploy.status = "SUCCESS"</div>
+                
+                <h1 style="color: var(--color-white);">Architecting Unbreakable <br><span style="color: var(--lab-accent);">Business Infrastructure.</span></h1>
+                <p class="subtitle">We build high-performance software ecosystems designed for absolute security, exponential scalability, and 100% operational uptime.</p>
+                
+                <div class="hero-status-bar">
+                    <div class="status-item">
+                        <div class="status-dot"></div>
+                        <span>Core Engine: OPTIMIZED</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security: SI 155 COMPLIANT</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-server"></i>
+                        <span>Node Latency: 12ms</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 4rem;">
+                    <a href="#handover" class="btn-lab">Initiate System Handover</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Core Pillars (Capabilities) -->
+        <section id="capabilities">
+            <div class="container reveal">
+                <div style="text-align: center; margin-bottom: 5rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--color-white); margin-bottom: 1rem;">Engineering Capabilities.</h2>
+                    <p style="color: var(--lab-text-dim);">Moving beyond development to systems orchestration.</p>
+                </div>
+
+                <div class="lab-grid">
+                    <!-- Pillar A -->
+                    <div class="lab-card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Enterprise E-Commerce Engines</h3>
+                        <p>Decoupled architecture utilizing React Frontends and Django Backends for luxury-grade performance and speed.</p>
+                        <div class="outcome">> Outcome: 24/7 Digital Sales Automation</div>
+                    </div>
+
+                    <!-- Pillar B -->
+                    <div class="lab-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>ERP & API Orchestration</h3>
+                        <p>Custom Odoo integration experts. We bridge the gap between your sales portal and global accounting standards.</p>
+                        <div class="outcome">> Outcome: Zero-Entry Financial Integrity</div>
+                    </div>
+
+                    <!-- Pillar C -->
+                    <div class="lab-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Infrastructure Management</h3>
+                        <p>Private Limousine server strategies. We deploy exclusively on high-performance AWS or DigitalOcean VPS environments.</p>
+                        <div class="outcome">> Outcome: Elite Security & Load Velocity</div>
+                    </div>
+
+                    <!-- Pillar D -->
+                    <div class="lab-card">
+                        <i class="fas fa-history"></i>
+                        <h3>Legacy System Migration</h3>
+                        <p>Modernizing multi-decade business logic. Secure data extraction and transformation for the next 20 years of growth.</p>
+                        <div class="outcome">> Outcome: Future-Proof Scalability</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-white">
+        <!-- Section 3: The Engine Room (Tech Stack) -->
+        <section class="engine-room">
             <div class="container reveal">
-                <h2 style="color: var(--color-navy);">Unbreakable Infrastructure.</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; color: var(--color-navy);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem;">
                     <div>
-                        <h4 style="color: var(--color-red);">1,100% Growth Scalability</h4>
-                        <p>Our e-commerce engines are built to handle massive catalog expansion without performance degradation.</p>
+                        <h2 style="font-size: 2.5rem; color: var(--color-white);">The Engine Room.</h2>
+                        <p style="color: var(--lab-text-dim);">The raw technical stack powering LLC systems.</p>
                     </div>
-                    <div>
-                        <h4 style="color: var(--color-red);">Automated Accounting</h4>
-                        <p>Bridging the gap between software logs and the balance sheet with custom API pipelines.</p>
+                    <div class="code-accent" style="position: relative; opacity: 0.6;">stack.integrity = 1.0</div>
+                </div>
+
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span class="tech-label">Frontend</span>
+                        <span class="tech-name">React.js</span>
                     </div>
-                    <div>
-                        <h4 style="color: var(--color-red);">Full-Stack Mastery</h4>
-                        <p>From UI/UX implementation to database optimization and secure server hardening.</p>
+                    <div class="tech-item">
+                        <span class="tech-label">Backend</span>
+                        <span class="tech-name">Python / Django</span>
                     </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Database</span>
+                        <span class="tech-name">PostgreSQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Payments</span>
+                        <span class="tech-name">Paynow / PayPal</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Orchestration</span>
+                        <span class="tech-name">Odoo API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Architectural Flowchart -->
+        <section>
+            <div class="container reveal">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 2rem; color: var(--color-white);">The Data Lifecycle.</h2>
+                    <p style="color: var(--lab-text-dim);">How we move value from Click to Bank Account.</p>
+                </div>
+
+                <div class="flow-container">
+                    <div class="flow-step">
+                        <div class="icon-circle"><i class="fas fa-mobile-alt"></i></div>
+                        <span>Customer Action</span>
+                    </div>
+                    <i class="fas fa-chevron-right" style="color: var(--lab-border);"></i>
+                    <div class="flow-step">
+                        <div class="icon-circle"><i class="fas fa-globe"></i></div>
+                        <span>React Platform</span>
+                    </div>
+                    <i class="fas fa-chevron-right" style="color: var(--lab-border);"></i>
+                    <div class="flow-step">
+                        <div class="icon-circle"><i class="fas fa-cog"></i></div>
+                        <span>Django Engine</span>
+                    </div>
+                    <i class="fas fa-chevron-right" style="color: var(--lab-border);"></i>
+                    <div class="flow-step">
+                        <div class="icon-circle"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <span>Odoo ERP</span>
+                    </div>
+                    <i class="fas fa-chevron-right" style="color: var(--lab-border);"></i>
+                    <div class="flow-step">
+                        <div class="icon-circle"><i class="fas fa-university"></i></div>
+                        <span>Bank Settlement</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Operational Continuity (Maintenance) -->
+        <section style="background: rgba(0,0,0,0.1);">
+            <div class="container reveal">
+                <div class="continuity-banner">
+                    <h2>Operational Continuity.</h2>
+                    <p style="max-width: 700px; margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
+                        Building a system is only 50% of the journey. We provide proactive monthly maintenance, security patches, and cloud optimization to ensure your "Digital Salesperson" never takes a day off.
+                    </p>
+                    <div style="font-family: var(--font-mono); color: var(--lab-accent); font-size: 0.8rem;">
+                        [ STATUS: PROTECTED ] - Monthly Security Audit Active.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Technical Handover (SI 155 Form) -->
+        <section id="handover" style="padding-bottom: 150px;">
+            <div class="container reveal">
+                <div style="text-align: center; margin-bottom: 5rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--color-white); margin-bottom: 1rem;">Technical Handover.</h2>
+                    <p style="color: var(--lab-text-dim);">Secure, SI 155 compliant credential transmission.</p>
+                </div>
+
+                <div style="max-width: 800px; margin: 0 auto; background: rgba(255,255,255,0.01); border: 1px solid var(--lab-border); padding: 4rem;">
+                    <form id="handoverForm" action="https://formspree.io/f/mjglllyo" method="POST">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem;">
+                            <div class="audit-field">
+                                <label style="color: var(--lab-accent); font-family: var(--font-mono); font-size: 0.7rem; display: block; margin-bottom: 1rem;">ENTITY NAME</label>
+                                <input type="text" name="entity_name" style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--lab-border); color: white; padding: 0.5rem 0;" required>
+                            </div>
+                            <div class="audit-field">
+                                <label style="color: var(--lab-accent); font-family: var(--font-mono); font-size: 0.7rem; display: block; margin-bottom: 1rem;">PRIMARY DOMAIN</label>
+                                <input type="text" name="domain" style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--lab-border); color: white; padding: 0.5rem 0;" required>
+                            </div>
+                        </div>
+
+                        <div class="audit-field" style="margin-bottom: 2.5rem;">
+                            <label style="color: var(--lab-accent); font-family: var(--font-mono); font-size: 0.7rem; display: block; margin-bottom: 1rem;">PROJECT ARCHITECTURE</label>
+                            <select name="architecture" style="width: 100%; background: #050b16; border: none; border-bottom: 1px solid var(--lab-border); color: white; padding: 0.5rem 0;" required>
+                                <option value="ecommerce">E-Commerce Ecosystem</option>
+                                <option value="erp">Odoo ERP Integration</option>
+                                <option value="migration">Legacy Data Migration</option>
+                                <option value="cloud">Custom Cloud Infrastructure</option>
+                            </select>
+                        </div>
+
+                        <div class="audit-field" style="margin-bottom: 3rem;">
+                            <label style="color: var(--lab-accent); font-family: var(--font-mono); font-size: 0.7rem; display: block; margin-bottom: 1rem;">SYSTEM BRIEF (CONSTRAINTS)</label>
+                            <textarea name="brief" rows="2" style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--lab-border); color: white; padding: 0.5rem 0;" placeholder="Describe your current software roadblocks..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-lab" style="width: 100%;">Initiate Secure Handover</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <span class="footer-logo">LOGIC LEAGUE</span>
-            <p class="footer-address">143 Swan Drive, Borrowdale, Harare</p>
-            <p style="font-size: 0.7rem; color: var(--color-gray); letter-spacing: 0.1em; text-transform: uppercase;">© 2025 LOGIC LEAGUE COOPERATION</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="app.js"></script>
+    <script>
+        // Local Lab Interaction: System Boot Sequence
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("Digital Lab Engine: Initialized.");
+        });
+    </script>
 </body>
+
 </html>

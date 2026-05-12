@@ -1,0 +1,275 @@
+/* 
+    Logic League Digital Lab: Systems Architecture & Engineering
+    Theme: Execution, Precision, Power
+    Primary Background: Logic Navy (#0A192F)
+    Accent: Lab Green (#4CAF50)
+*/
+
+:root {
+    --lab-bg: #050b16; /* Deepest Navy */
+    --lab-card-bg: rgba(76, 175, 80, 0.03);
+    --lab-accent: #4CAF50; /* Lab Green */
+    --lab-accent-glow: rgba(76, 175, 80, 0.4);
+    --lab-text-main: #e0e6ed;
+    --lab-text-dim: #8892b0;
+    --lab-border: rgba(76, 175, 80, 0.2);
+    --font-mono: 'Fira Code', 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: var(--lab-bg);
+    color: var(--lab-text-main);
+    overflow-x: hidden;
+}
+
+/* --- Layout Containers --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 120px 0;
+    position: relative;
+}
+
+/* --- Hero Section --- */
+.lab-hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 70% 30%, rgba(76, 175, 80, 0.08), transparent 50%);
+    border-bottom: 1px solid var(--lab-border);
+}
+
+.lab-hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.lab-hero .subtitle {
+    font-size: 1.25rem;
+    color: var(--lab-text-dim);
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+.hero-status-bar {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--lab-accent);
+    margin-top: 4rem;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--lab-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--lab-accent);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* --- Technical Pillar Cards --- */
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.lab-card {
+    background: var(--lab-card-bg);
+    border: 1px solid var(--lab-border);
+    padding: 3rem;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.lab-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--lab-accent), transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+}
+
+.lab-card:hover {
+    background: rgba(76, 175, 80, 0.08);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.lab-card:hover::before {
+    transform: translateX(100%);
+}
+
+.lab-card i {
+    font-size: 2rem;
+    color: var(--lab-accent);
+    margin-bottom: 2rem;
+}
+
+.lab-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--lab-accent);
+}
+
+.lab-card .outcome {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--lab-border);
+    font-size: 0.85rem;
+    color: var(--lab-accent);
+    font-family: var(--font-mono);
+}
+
+/* --- The Engine Room (Tech Stack) --- */
+.engine-room {
+    background: #0a192f;
+    border-top: 1px solid var(--lab-border);
+    border-bottom: 1px solid var(--lab-border);
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.tech-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    transition: var(--transition-prestige);
+}
+
+.tech-item:hover {
+    border-color: var(--lab-accent);
+    background: rgba(76, 175, 80, 0.03);
+}
+
+.tech-item .tech-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--lab-text-dim);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.tech-item .tech-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-white);
+}
+
+/* --- Architecture Flowchart --- */
+.flow-container {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px dashed var(--lab-border);
+    padding: 4rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.flow-step {
+    text-align: center;
+    z-index: 2;
+}
+
+.flow-step .icon-circle {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--lab-accent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--lab-bg);
+    margin-bottom: 1rem;
+    color: var(--lab-accent);
+}
+
+.flow-step span {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+}
+
+/* --- Maintenance Section (Continuity) --- */
+.continuity-banner {
+    background: linear-gradient(90deg, #0a192f, #1a2a3f);
+    border-left: 5px solid var(--lab-accent);
+    padding: 4rem;
+    margin-top: 6rem;
+}
+
+.continuity-banner h2 {
+    color: var(--lab-accent);
+    margin-bottom: 1rem;
+}
+
+/* --- Technical Handover Button --- */
+.btn-lab {
+    background: var(--lab-accent);
+    color: var(--lab-bg);
+    padding: 1.2rem 2.5rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-lab:hover {
+    box-shadow: 0 0 30px var(--lab-accent-glow);
+    transform: translateY(-2px);
+}
+
+/* --- System Accents (Code Styles) --- */
+.code-accent {
+    position: absolute;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--lab-accent);
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .lab-hero h1 { font-size: 2.5rem; }
+    .lab-grid { grid-template-columns: 1fr; }
+    .flow-container { flex-direction: column; gap: 3rem; }
+}
